@@ -1,0 +1,48 @@
+<%- include("header"); -%>
+
+<h1>
+    Customize Your Joke
+</h1>
+
+<form action="/joke" method="post" class="form">
+    <select name="category" id="select">
+        <option value="Any">Any</option>
+        <option value="Programming">Programming</option>
+        <option value="Miscellaneous">Misc</option>
+        <option value="Dark">Dark</option>
+        <option value="Spooky">Spooky</option>
+        <option value="Christmas">Christmas</option>
+    </select>
+
+    <select name="type" id="select">
+        <option value="twopart">twopart</option>
+        <option value="single">single</option>
+    </select>
+
+    <select name="amount" id="select">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <button type="submit" class="form-submit">Go</button>
+
+</form>
+
+<section id="cards" class="cards">
+    <% if (locals.data){ %>
+    <article class="card-item">
+      <h2 >
+        <%= data %>
+      </h2>
+    </article>
+    <% } %>
+
+    <!-- The below code are for Error handling if the chosen one is not there -->
+    <div id="tag-error" class="tag-error">
+      <%= locals.error %>
+    </div>
+</section>
+
+
+<%- include('footer'); -%>

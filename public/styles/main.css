@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-color: rgb(12, 12, 39);
+  color: rgb(255, 35, 255);
+  text-align: center;
+  margin: auto;
+  padding: 200px;
+  font-family: 'Noto Serif', serif;
+
+}
+
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  font-size: 0.9rem;
+  background: #e5e2e2;
+  padding: 1rem;
+  color: rgb(217, 92, 92);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #bbaeae;
+}
+
+
+.home {
+  font-size: 3.5rem;
+  padding: 50px;
+}
+
+
+.cards {
+  margin: 20px 0;
+  width: 100%;
+  border: 0px solid;
+  box-shadow: 3px 8px 48px  #888888;
+}
+
+.form {
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#select{
+  margin: 1rem;
+  border-radius: 5px;
+  color:rgb(255, 35, 255) ;
+  height: 30px;
+}
+
+.form-submit {
+  width: 75px;
+  border-radius: 5px
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-left: 500px;
+  color: #fff;
+
+}
